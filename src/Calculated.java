@@ -7,7 +7,7 @@ public class Calculated {
  public Calculated(int loanAmount, int years, int interestRate) {
   this.loanAmount = loanAmount;
   this.PaymantPeriod = years * MonthInYear;
-  this.interestRate = interestRate;
+  this.interestRate = interestRate; //test git
  }
 
  public int Amount() {
