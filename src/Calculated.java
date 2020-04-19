@@ -1,19 +1,14 @@
-public class Calculated {
- static int MonthInYear = 12;
- static int PaymantPeriod;
- int loanAmount;
- int interestRate;
+ public class Calculated {
+  static int MonthInYear = 12;
+  static int PaymantPeriod;
+  static int CurrentBalance;
+  static int StartingBalance;
+  static int InterestRate;
 
- public Calculated(int loanAmount, int years, int interestRate) {
-  this.loanAmount = loanAmount;
-  this.PaymantPeriod = years * MonthInYear;
-  this.interestRate = interestRate; //test git
- }
+  public Calculated(int StartingBalance, int years, int interestRate) {
+   this.StartingBalance = StartingBalance;
+   this.PaymantPeriod = years * MonthInYear;
+   this.InterestRate = interestRate;
+  }
 
- public int Amount() {
-  int Amount;
-   Amount = loanAmount / PaymantPeriod;
-   loanAmount -= Amount;
-   return loanAmount;
  }
-}
